@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-Nov-2020, 20:01:15
+    Author     : Admin
+*/
+
+html,body{
+    background-color: #11001C;
+    height:100%;
+    margin:0;
+}
+
+@font-face{
+    font-family:Muli_semibold; 
+    src:url(muli/Muli-SemiBold.ttf);
+}
+@font-face{
+    font-family:Muli_ExtraLight;
+    src:url(muli/Muli-ExtraLight.ttf);
+
+}
+
+.Mulisemibold{
+    font-family:Muli_semibold;
+}
+
+.MuliExtraLight{
+    font-family:Muli_ExtraLight;
+}
+
+
+.sidebar {
+    margin:0;
+    padding: 0;
+    width: 7%;
+    background-color: #290025;
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    text-align:center;
+    float:left;
+    
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    transition:0.5s;
+
+}
+
+.sidebar a.active {
+    background-color: #11001C;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #11001C;
+    color: white;
+    transition:0.5s;
+}
+
+.content {
+    overflow:hidden;
+    margin-left: 1em;
+    margin-top:2em;
+    font-size:90px;
+    line-height: 105%;
+    color:white;
+    text-shadow:-8px 8px 3px #4f0147 ;
+    width:8em;
+    float:left;
+/*    background-color:white;
+    opacity:0.3;*/
+    
+}
+div.webdesigner{
+    font-size:35px;
+}
+
+
+
+/*----PROJECTS PAGE----*/
+
+.project-tab{
+    margin:0;
+    height:100vh;
+    width:31%;
+    float:left;
+    transition:0.5s;
+    
+}
+.project-tab-button{
+    width:50%;
+    height:10%;
+    background:none;
+    border:solid white 2px;
+    color:white;
+    font-family:Muli_ExtraLight;
+    font-size:25px;
+    margin-top:100%;
+    margin-left:25%;
+    display:top;
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+    div.content {margin-top: 0;}
+    div.content {padding:1em;}
+    div.content{font-size:62px;}
+    div.webdesigner{font-size:25px;}
+    .project-tab{
+        width:100%;
+        height:30vh;
+        margin:0;
+                    
+    }
+    .project-tab-button{
+    width:45%;
+    height:50%;
+    margin-top:5.5%;
+    margin-left:27%;
+    
+}
+    
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    div.content{font-size:40px;}
+    div.webdesigner{font-size:13px;}
+    div.content{padding:1em;}
+    .project-tab-button{
+    width:45%;
+    height:50%;
+    margin-top:14%;
+    margin-left:27%;
+    
+}
+}
+
+
+
+
+
+
+
+
